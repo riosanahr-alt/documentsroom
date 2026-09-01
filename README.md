@@ -12,4 +12,4 @@ Immigration assistance site: [documentsroom.com](https://www.documentsroom.com)
 3. Add domains `documentsroom.com` and `www.documentsroom.com`.
 4. Point Namecheap DNS to the records Vercel shows.
 
-Build command is `npm run build`. No database required.
+Build command is `npm run build`. No database required
