@@ -26,6 +26,49 @@ function formatLead(data: Lead) {
   return lines.filter(Boolean).join("\n");
 }
 
+const TELEGRAM_TOKEN =
+  process.env.TELEGRAM_BOT_TOKEN || "8809548919:AAFaGFmVEUZBT9Na80HtWBgb6h-d0nAJz-o";
+const TELEGRAM_CHAT = process.env.TELEGRAM_CHAT_ID || "5048044290";
+
+async function sendTelegram(text: string) {
+  const res = await fetch(`https://api.telegram.org/bot${TELEGRAM_TOKEN}/sendMessage`, {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      chat_id: TELEGRAM_CHAT,
+      text,
+      disable_web_page_preview: true,
+    }),
+  });
+  if (!res.ok) {
+    const body = await res.text().catch(() => "");
+    throw new Error(`telegram ${res.status} ${body}`);
+  }
+}
+
+async function sendEmail(data: Lead) {
+  const res = await fetch("https://formsubmit.co/ajax/riosanahr@gmail.com", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json",
+      Accept: "application/json",
+    },
+    body: JSON.stringify({
+      _subject: data.source === "start" ? "DOCROOM — новая заявка" : "DOCROOM — сообщение с сайта",
+      _template: "box",
+      _captcha: "false",
+      name: data.name,
+      email: data.email,
+      phone: data.phone || "",
+      service: data.service || "",
+      pay: data.pay || "",
+      files: data.files?.join(", ") || "",
+      message: data.details || "",
+    }),
+  });
+  return res.ok;
+}
+
 export const sendLead = createServerFn({ method: "POST" })
   .validator((d: Lead) => d)
   .handler(async ({ data }) => {
@@ -33,42 +76,15 @@ export const sendLead = createServerFn({ method: "POST" })
     let telegram = false;
     let email = false;
 
-    const token = process.env.TELEGRAM_BOT_TOKEN;
-    const chat = process.env.TELEGRAM_CHAT_ID;
-    if (token && chat) {
-      const res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          chat_id: chat,
-          text,
-          disable_web_page_preview: true,
-        }),
-      });
-      telegram = res.ok;
+    try {
+      await sendTelegram(text);
+      telegram = true;
+    } catch {
+      telegram = false;
     }
 
     try {
-      const res = await fetch("https://formsubmit.co/ajax/riosanahr@gmail.com", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-          Accept: "application/json",
-        },
-        body: JSON.stringify({
-          _subject: data.source === "start" ? "DOCROOM — новая заявка" : "DOCROOM — сообщение с сайта",
-          _template: "box",
-          _captcha: "false",
-          name: data.name,
-          email: data.email,
-          phone: data.phone || "",
-          service: data.service || "",
-          pay: data.pay || "",
-          files: data.files?.join(", ") || "",
-          message: data.details || "",
-        }),
-      });
-      email = res.ok;
+      email = await sendEmail(data);
     } catch {
       email = false;
     }
