@@ -469,8 +469,8 @@ export const ui = {
       "Полезные материалы о документах и иммиграционных процессах",
     ),
     text: L(
-      "I-130, certified translations, apostille, NCLEX-RN in New York, mobile notary, Form N-400, documents for a U.S. move, and other common questions — clear, short, and without the extra.",
-      "I-130, заверенные переводы, апостиль, NCLEX-RN в Нью-Йорке, нотариус на выезде, форма N-400, документы для переезда в США и другие частые вопросы — понятно, кратко и без лишнего.",
+      "I-130, F-1 and B-1/B-2 visas, EB-2 NIW, certified translations, apostille, NCLEX-RN in New York, mobile notary, Form N-400, and other common questions — clear, short, and without the extra.",
+      "I-130, визы F-1 и B-1/B-2, EB-2 NIW, заверенные переводы, апостиль, NCLEX-RN в Нью-Йорке, нотариус на выезде, форма N-400 и другие частые вопросы — понятно, кратко и без лишнего.",
     ),
     all: L("All", "Все"),
   },

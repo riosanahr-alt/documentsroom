@@ -54,12 +54,12 @@ export const PAGE_SEO: Record<string, SeoEntry> = {
   },
   "/blog": {
     title: L(
-      "Immigration documents: I-130, apostille, NCLEX, N-400 — DOCROOM",
-      "Иммиграционные документы: I-130, апостиль, NCLEX, N-400 — DOCROOM",
+      "Immigration documents: I-130, F-1, B-1/B-2, EB-2 NIW, apostille, NCLEX — DOCROOM",
+      "Иммиграционные документы: I-130, F-1, B-1/B-2, EB-2 NIW, апостиль, NCLEX — DOCROOM",
     ),
     description: L(
-      "Practical notes on Form I-130, certified translation for USCIS, apostille, NCLEX-RN in New York, mobile notary, and N-400 naturalization.",
-      "Разборы формы I-130, заверенного перевода для USCIS, апостиля, NCLEX-RN в Нью-Йорке, нотариуса на выезде и натурализации N-400.",
+      "Practical notes on Form I-130, F-1 and B-1/B-2 visas, EB-2 NIW case organization, certified translation for USCIS, apostille, and N-400 naturalization.",
+      "Разборы формы I-130, виз F-1 и B-1/B-2, организации кейса EB-2 NIW, заверенного перевода для USCIS, апостиля и натурализации N-400.",
     ),
   },
   "/contact": {

@@ -12,6 +12,202 @@ export type Article = {
 
 export const ARTICLES: Article[] = [
   {
+    slug: "f1-student-visa-documents",
+    title: L(
+      "F-1 student visa: I-20, DS-160, and the document packet",
+      "Студенческая виза F-1: I-20, DS-160 и пакет документов",
+    ),
+    excerpt: L(
+      "F-1 student visa, Form I-20, SEVIS, DS-160, financial documents, transcripts. How the consular packet is assembled before the interview.",
+      "Студенческая виза F-1, форма I-20, SEVIS, DS-160, финансовые документы, транскрипты. Как собирается консульский пакет до интервью.",
+    ),
+    category: L("Visas", "Визы"),
+    date: L("September 1, 2026", "1 сентября 2026"),
+    image: "/images/blog-f1.jpg",
+    body: [
+      {
+        paragraphs: [
+          L(
+            "An F-1 student visa is the common nonimmigrant visa for full-time study in the United States. People search “F-1 student visa”, “I-20 form”, “DS-160 student”, “SEVIS fee”, “документы на студенческую визу США”, “как получить F-1”, “финансовые документы для F-1”.",
+            "Студенческая виза F-1 — обычная неиммиграционная виза для очной учёбы в США. Ищут «F-1 student visa», «форма I-20», «DS-160 студент», «SEVIS fee», «документы на студенческую визу США», «как получить F-1», «финансовые документы для F-1».",
+          ),
+          L(
+            "The school issues Form I-20 after admission. SEVIS is the government record attached to that I-20. DS-160 is the online visa application. The interview is at a U.S. consulate. DOCROOM does not admit you to a school and does not decide the visa. We organize the papers that go with I-20 and DS-160.",
+            "Школа выдаёт форму I-20 после зачисления. SEVIS — государственная запись, привязанная к этому I-20. DS-160 — онлайн-анкета на визу. Интервью — в консульстве США. DOCROOM не зачисляет в школу и не решает визу. Мы организуем бумаги к I-20 и DS-160.",
+          ),
+        ],
+      },
+      {
+        heading: L("What the F-1 packet usually includes", "Что обычно входит в пакет F-1"),
+        paragraphs: [
+          L(
+            "A valid passport; Form I-20 signed by the school and the student; proof the I-901 SEVIS fee was paid; the DS-160 confirmation page; the visa appointment confirmation; academic transcripts, diplomas, and test scores; a financial packet (bank statements, sponsor letter, affidavit of support where used); and certified English translations of any foreign record.",
+            "Действующий паспорт; форма I-20 с подписью школы и студента; подтверждение оплаты I-901 SEVIS fee; страница подтверждения DS-160; подтверждение записи на визу; академические транскрипты, дипломы, тесты; финансовый пакет (выписки, письмо спонсора, affidavit of support если используется); заверенный английский перевод каждой иностранной бумаги.",
+          ),
+          L(
+            "Names and dates of birth must match across the passport, the I-20, the DS-160, and the diplomas. A transliteration that does not match the machine-readable passport line is a consular delay, not a style choice.",
+            "Имена и даты рождения должны совпадать в паспорте, в I-20, в DS-160 и в дипломах. Транслитерация, которая не бьётся со строкой паспорта, — это задержка в консульстве, а не вопрос вкуса.",
+          ),
+        ],
+      },
+      {
+        heading: L("How we prepare the file", "Как мы готовим файл"),
+        paragraphs: [
+          L(
+            "You send the I-20, scans of diplomas and transcripts, and the financial papers you already have. We complete the DS-160 answers from the facts you provide, match them to the I-20, prepare certified translations, and return a checklist you can take to the interview. You review every page before anything is submitted.",
+            "Вы присылаете I-20, сканы дипломов и транскриптов и те финансовые бумаги, которые уже есть. Мы заполняем ответы DS-160 по вашим сведениям, сверяем их с I-20, готовим заверенные переводы и отдаём чек-лист на интервью. Каждую страницу вы читаете до любой отправки.",
+          ),
+        ],
+        quote: L(
+          "The consulate reads the file, not the intention to study. The papers have to say the same thing.",
+          "Консульство читает файл, а не намерение учиться. Бумаги должны говорить одно и то же.",
+        ),
+      },
+      {
+        note: L(
+          "This article is about assembling F-1 documents. Admission, SEVIS, and the visa decision belong to the school and the consulate.",
+          "Статья о сборке документов F-1. Зачисление, SEVIS и решение по визе — у школы и консульства.",
+        ),
+        paragraphs: [],
+      },
+    ],
+  },
+  {
+    slug: "b1-b2-tourist-visa-documents",
+    title: L(
+      "B-1/B-2 tourist visa: DS-160 and the documents for a visitor visa",
+      "Виза туриста B-1/B-2: DS-160 и документы на гостевую визу",
+    ),
+    excerpt: L(
+      "B-1/B-2 visa, tourist visa USA, DS-160, invitation letter, ties to the home country. Which papers usually go in the visitor-visa file.",
+      "Виза B-1/B-2, туристическая виза США, DS-160, приглашение, связи со своей страной. Какие бумаги обычно входят в файл гостевой визы.",
+    ),
+    category: L("Visas", "Визы"),
+    date: L("September 1, 2026", "1 сентября 2026"),
+    image: "/images/blog-b1b2.jpg",
+    body: [
+      {
+        paragraphs: [
+          L(
+            "B-1/B-2 is the common U.S. visitor visa: B-1 for certain business visits, B-2 for tourism, family, and medical travel. People search “B-1/B-2 visa”, “tourist visa USA”, “DS-160 tourist”, “виза туриста в США”, “документы на B-2”, “приглашение в США для визы”, “гостевая виза США”.",
+            "B-1/B-2 — обычная гостевая виза США: B-1 для части деловых поездок, B-2 для туризма, семьи и лечения. Ищут «B-1/B-2 visa», «tourist visa USA», «DS-160 tourist», «виза туриста в США», «документы на B-2», «приглашение в США для визы», «гостевая виза США».",
+          ),
+          L(
+            "DS-160 is the online application. The interview is at a consulate. An invitation letter from a relative in the United States is supporting paper — it is not a visa. DOCROOM prepares the document side: the form from your facts, translations, and a file you can actually carry to the appointment.",
+            "DS-160 — онлайн-анкета. Интервью — в консульстве. Письмо-приглашение от родственника в США — это приложение, а не виза. DOCROOM готовит документальную сторону: форму по вашим сведениям, переводы и файл, который можно взять на запись.",
+          ),
+        ],
+      },
+      {
+        heading: L("What the B-1/B-2 file usually includes", "Что обычно входит в файл B-1/B-2"),
+        paragraphs: [
+          L(
+            "A valid passport; the DS-160 confirmation page; the visa appointment confirmation; a simple itinerary or invitation where one exists; evidence of ties to the home country (work, study, property, family) as papers, not as a story; bank statements or other financial pages the consulate’s list asks for; and certified translations of any document that is not in English.",
+            "Действующий паспорт; страница подтверждения DS-160; подтверждение записи; простой маршрут или приглашение, если оно есть; подтверждение связей со своей страной (работа, учёба, имущество, семья) бумагами, а не рассказом; выписки или другие финансовые страницы по списку консульства; заверенный перевод каждого документа не на английском.",
+          ),
+          L(
+            "Travel dates, prior U.S. trips, and employer names on DS-160 have to match the stamps and the employment letters. One invented date is worse than a short, accurate form.",
+            "Даты поездок, предыдущие визиты в США и названия работодателей в DS-160 должны совпадать со штампами и справками с работы. Одна выдуманная дата хуже короткой и точной анкеты.",
+          ),
+        ],
+      },
+      {
+        heading: L("How we prepare the papers", "Как мы готовим бумаги"),
+        paragraphs: [
+          L(
+            "You answer in Russian or English. We complete DS-160 from those facts, put the invitation, employment, and bank pages in a readable order, add certified translations, and return a packet for the consular appointment. You read the PDF before it is submitted.",
+            "Вы отвечаете по-русски или по-английски. Мы заполняем DS-160 по этим сведениям, ставим приглашение, работу и выписки в читаемый порядок, добавляем заверенные переводы и отдаём пакет на консульскую запись. PDF вы читаете до отправки.",
+          ),
+        ],
+        quote: L(
+          "A visitor visa is decided at the window. The file only has to be consistent.",
+          "Гостевую визу решают у окна. Файлу достаточно быть последовательным.",
+        ),
+      },
+      {
+        note: L(
+          "This article is about preparing B-1/B-2 documents. The consulate decides the visa. We do not promise an outcome.",
+          "Статья о подготовке документов B-1/B-2. Визу решает консульство. Исход не обещаем.",
+        ),
+        paragraphs: [],
+      },
+    ],
+  },
+  {
+    slug: "eb2-niw-case-organization",
+    title: L(
+      "How to organize an EB-2 NIW case: I-140 packet, exhibits, and evidence",
+      "Как организовать кейс EB-2 NIW: пакет I-140, exhibits и доказательства",
+    ),
+    excerpt: L(
+      "EB-2 National Interest Waiver, Form I-140, petition letter, recommendation letters, CV and publications. How the evidence packet is indexed — so a reviewer can follow the file.",
+      "EB-2 National Interest Waiver, форма I-140, petition letter, рекомендательные письма, CV и публикации. Как индексируется пакет доказательств — чтобы по файлу можно было пройтись.",
+    ),
+    category: L("USCIS forms", "Формы USCIS"),
+    date: L("September 1, 2026", "1 сентября 2026"),
+    image: "/images/blog-eb2-niw.jpg",
+    body: [
+      {
+        paragraphs: [
+          L(
+            "EB-2 NIW — the EB-2 National Interest Waiver — is an employment-based immigrant petition. Form I-140 is the USCIS form. Labor certification is waived. People search “EB-2 NIW”, “I-140 NIW”, “national interest waiver”, “как собрать кейс NIW”, “организация кейса EB-2”, “вейвер национального интереса”.",
+            "EB-2 NIW — EB-2 National Interest Waiver — это employment-based иммиграционная петиция. Форма USCIS — I-140. Labor certification не требуется. Ищут «EB-2 NIW», «I-140 NIW», «national interest waiver», «как собрать кейс NIW», «организация кейса EB-2», «вейвер национального интереса».",
+          ),
+          L(
+            "The legal argument is one part of the file. The other part is order: an exhibit list, numbered tabs, and documents that match the petition letter. A strong story with a messy packet is still hard to read. DOCROOM organizes the case — the papers, the translations, the index — so the reviewer is not hunting.",
+            "Юридический аргумент — одна часть файла. Другая — порядок: список exhibits, нумерованные вкладки и документы, которые совпадают с petition letter. Сильная история в хаотичном пакете всё равно плохо читается. DOCROOM организует кейс — бумаги, переводы, индекс — чтобы рецензент не искал.",
+          ),
+        ],
+      },
+      {
+        heading: L("What an EB-2 NIW packet usually contains", "Из чего обычно состоит пакет EB-2 NIW"),
+        paragraphs: [
+          L(
+            "Form I-140; the petition letter (the written NIW argument); a table of exhibits; the beneficiary’s CV; diplomas, transcripts, and licenses; publication lists and citation reports; patents or conference records where they exist; recommendation letters; evidence of work in the field; and certified English translations of any foreign document. Media, awards, and contracts go in only when they exist on paper — not as a placeholder.",
+            "Форма I-140; petition letter (письменный аргумент NIW); таблица exhibits; CV бенефициара; дипломы, транскрипты и лицензии; списки публикаций и citation reports; патенты или материалы конференций, если они есть; рекомендательные письма; подтверждение работы в области; заверенный английский перевод каждого иностранного документа. СМИ, награды и контракты кладут только когда они есть на бумаге — не «для вида».",
+          ),
+          L(
+            "Names, dates, and titles must match across the I-140, the CV, the diplomas, and the letters. A maiden name, a transliteration, or a journal title that does not match the PDF is a delay, not a detail.",
+            "Имена, даты и должности должны совпадать в I-140, в CV, в дипломах и в письмах. Девичья фамилия, транслитерация или название журнала, которое не бьётся с PDF — это задержка, а не мелочь.",
+          ),
+        ],
+      },
+      {
+        heading: L("How we organize the case", "Как мы организуем кейс"),
+        paragraphs: [
+          L(
+            "You send what you already have: scans, a CV, a draft petition letter if one exists, recommendation letters, publication PDFs. We build an exhibit list, number the file, complete Form I-140 from the facts you provide, place certified translations next to the originals, and return a packet a reviewer can walk through exhibit by exhibit.",
+            "Вы присылаете то, что уже есть: сканы, CV, черновик petition letter если он есть, рекомендательные письма, PDF публикаций. Мы собираем список exhibits, нумеруем файл, заполняем форму I-140 по вашим сведениям, кладём заверенные переводы рядом с оригиналами и отдаём пакет, по которому можно пройтись exhibit за exhibit.",
+          ),
+          L(
+            "We do not invent publications, citations, or letters that are not in your papers. We do not write a legal theory of “national interest” as counsel. We put the existing evidence in an order USCIS can actually use.",
+            "Мы не выдумываем публикации, цитирования и письма, которых нет в ваших бумагах. Мы не пишем юридическую теорию «национального интереса» как адвокаты. Мы ставим имеющиеся доказательства в порядок, которым USCIS реально можно пользоваться.",
+          ),
+        ],
+        quote: L(
+          "A NIW case is a file, not a pile. The index is the first page a reviewer should see.",
+          "Кейс NIW — это файл, а не стопка. Индекс — первая страница, которую должен увидеть рецензент.",
+        ),
+      },
+      {
+        heading: L("Translations, apostille, and documents from abroad", "Переводы, апостиль и документы из-за границы"),
+        paragraphs: [
+          L(
+            "Diplomas and licenses from Ukraine, Russia, Belarus, Kazakhstan, and other countries need a complete certified translation. Some employers and evaluators also ask for an apostille. If a transcript or license is still in another country, we can help retrieve it and bring it into the same numbered packet.",
+            "Дипломы и лицензии из Украины, России, Беларуси, Казахстана и других стран нуждаются в полном заверенном переводе. Часть работодателей и evaluators просит ещё апостиль. Если транскрипт или лицензия ещё в другой стране, помогаем получить их и вложить в тот же нумерованный пакет.",
+          ),
+        ],
+      },
+      {
+        note: L(
+          "This article is about organizing an EB-2 NIW document packet. Whether NIW is the right category, and how the legal argument is framed, depends on your facts and, where needed, licensed counsel. USCIS decides the petition.",
+          "Статья об организации документального пакета EB-2 NIW. Подходит ли вам эта категория и как строится юридический аргумент — вопрос ваших фактов и, если нужно, лицензированного специалиста. Петицию рассматривает USCIS.",
+        ),
+        paragraphs: [],
+      },
+    ],
+  },
+  {
     slug: "i-130-family-petition",
     title: L(
       "How to prepare Form I-130: family petition to USCIS",
